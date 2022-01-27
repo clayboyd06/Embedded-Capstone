@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DAC8596279CE3A400E9E6BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8595279CE3A400E9E6BB /* AppDelegate.swift */; };
+		7DAC8598279CE3A400E9E6BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8597279CE3A400E9E6BB /* SceneDelegate.swift */; };
+		7DAC859A279CE3A400E9E6BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8599279CE3A400E9E6BB /* ViewController.swift */; };
+		7DAC859D279CE3A400E9E6BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAC859B279CE3A400E9E6BB /* Main.storyboard */; };
+		7DAC859F279CE3A800E9E6BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAC859E279CE3A800E9E6BB /* Assets.xcassets */; };
+		7DAC85A2279CE3A800E9E6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAC85A0279CE3A800E9E6BB /* LaunchScreen.storyboard */; };
+		7DAC85AD279CE3A900E9E6BB /* TerraboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC85AC279CE3A900E9E6BB /* TerraboxTests.swift */; };
+		7DAC85B7279CE3A900E9E6BB /* TerraboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC85B6279CE3A900E9E6BB /* TerraboxUITests.swift */; };
+		7DAC85B9279CE3A900E9E6BB /* TerraboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC85B8279CE3A900E9E6BB /* TerraboxUITestsLaunchTests.swift */; };
+		7DAC85C9279CE7AF00E9E6BB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85C8279CE7AF00E9E6BB /* FirebaseAnalytics */; };
+		7DAC85CB279CE7AF00E9E6BB /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85CA279CE7AF00E9E6BB /* FirebaseAnalyticsSwift-Beta */; };
+		7DAC85CD279CE7AF00E9E6BB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85CC279CE7AF00E9E6BB /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		7DAC85CF279CE7AF00E9E6BB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85CE279CE7AF00E9E6BB /* FirebaseAppCheck */; };
+		7DAC85D1279CE7AF00E9E6BB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85D0279CE7AF00E9E6BB /* FirebaseDatabase */; };
+		7DAC85D3279CE7AF00E9E6BB /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85D2279CE7AF00E9E6BB /* FirebaseDatabaseSwift-Beta */; };
+		7DAC85D5279CE7AF00E9E6BB /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85D4279CE7AF00E9E6BB /* FirebaseDynamicLinks */; };
+		7DAC85D7279CE7AF00E9E6BB /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85D6279CE7AF00E9E6BB /* FirebaseRemoteConfig */; };
+		7DAC85D9279CE7AF00E9E6BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7DAC85D8279CE7AF00E9E6BB /* FirebaseStorage */; };
+		7DAC85DB279CED6D00E9E6BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAC85DA279CED6D00E9E6BB /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DAC85A9279CE3A900E9E6BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DAC858A279CE3A400E9E6BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DAC8591279CE3A400E9E6BB;
+			remoteInfo = Terrabox;
+		};
+		7DAC85B3279CE3A900E9E6BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DAC858A279CE3A400E9E6BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DAC8591279CE3A400E9E6BB;
+			remoteInfo = Terrabox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DAC8592279CE3A400E9E6BB /* Terrabox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terrabox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAC8595279CE3A400E9E6BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DAC8597279CE3A400E9E6BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DAC8599279CE3A400E9E6BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DAC859C279CE3A400E9E6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DAC859E279CE3A800E9E6BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DAC85A1279CE3A800E9E6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DAC85A3279CE3A800E9E6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DAC85A8279CE3A900E9E6BB /* TerraboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerraboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAC85AC279CE3A900E9E6BB /* TerraboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraboxTests.swift; sourceTree = "<group>"; };
+		7DAC85B2279CE3A900E9E6BB /* TerraboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerraboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAC85B6279CE3A900E9E6BB /* TerraboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraboxUITests.swift; sourceTree = "<group>"; };
+		7DAC85B8279CE3A900E9E6BB /* TerraboxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraboxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DAC85DA279CED6D00E9E6BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DAC858F279CE3A400E9E6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC85D3279CE7AF00E9E6BB /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				7DAC85D1279CE7AF00E9E6BB /* FirebaseDatabase in Frameworks */,
+				7DAC85D9279CE7AF00E9E6BB /* FirebaseStorage in Frameworks */,
+				7DAC85CF279CE7AF00E9E6BB /* FirebaseAppCheck in Frameworks */,
+				7DAC85CB279CE7AF00E9E6BB /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				7DAC85CD279CE7AF00E9E6BB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				7DAC85D5279CE7AF00E9E6BB /* FirebaseDynamicLinks in Frameworks */,
+				7DAC85C9279CE7AF00E9E6BB /* FirebaseAnalytics in Frameworks */,
+				7DAC85D7279CE7AF00E9E6BB /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85A5279CE3A900E9E6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85AF279CE3A900E9E6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DAC8589279CE3A300E9E6BB = {
+			isa = PBXGroup;
+			children = (
+				7DAC8594279CE3A400E9E6BB /* Terrabox */,
+				7DAC85AB279CE3A900E9E6BB /* TerraboxTests */,
+				7DAC85B5279CE3A900E9E6BB /* TerraboxUITests */,
+				7DAC8593279CE3A400E9E6BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DAC8593279CE3A400E9E6BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DAC8592279CE3A400E9E6BB /* Terrabox.app */,
+				7DAC85A8279CE3A900E9E6BB /* TerraboxTests.xctest */,
+				7DAC85B2279CE3A900E9E6BB /* TerraboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DAC8594279CE3A400E9E6BB /* Terrabox */ = {
+			isa = PBXGroup;
+			children = (
+				7DAC8595279CE3A400E9E6BB /* AppDelegate.swift */,
+				7DAC8597279CE3A400E9E6BB /* SceneDelegate.swift */,
+				7DAC8599279CE3A400E9E6BB /* ViewController.swift */,
+				7DAC859B279CE3A400E9E6BB /* Main.storyboard */,
+				7DAC859E279CE3A800E9E6BB /* Assets.xcassets */,
+				7DAC85A0279CE3A800E9E6BB /* LaunchScreen.storyboard */,
+				7DAC85A3279CE3A800E9E6BB /* Info.plist */,
+				7DAC85DA279CED6D00E9E6BB /* GoogleService-Info.plist */,
+			);
+			path = Terrabox;
+			sourceTree = "<group>";
+		};
+		7DAC85AB279CE3A900E9E6BB /* TerraboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DAC85AC279CE3A900E9E6BB /* TerraboxTests.swift */,
+			);
+			path = TerraboxTests;
+			sourceTree = "<group>";
+		};
+		7DAC85B5279CE3A900E9E6BB /* TerraboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DAC85B6279CE3A900E9E6BB /* TerraboxUITests.swift */,
+				7DAC85B8279CE3A900E9E6BB /* TerraboxUITestsLaunchTests.swift */,
+			);
+			path = TerraboxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DAC8591279CE3A400E9E6BB /* Terrabox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAC85BC279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "Terrabox" */;
+			buildPhases = (
+				7DAC858E279CE3A400E9E6BB /* Sources */,
+				7DAC858F279CE3A400E9E6BB /* Frameworks */,
+				7DAC8590279CE3A400E9E6BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Terrabox;
+			packageProductDependencies = (
+				7DAC85C8279CE7AF00E9E6BB /* FirebaseAnalytics */,
+				7DAC85CA279CE7AF00E9E6BB /* FirebaseAnalyticsSwift-Beta */,
+				7DAC85CC279CE7AF00E9E6BB /* FirebaseAnalyticsWithoutAdIdSupport */,
+				7DAC85CE279CE7AF00E9E6BB /* FirebaseAppCheck */,
+				7DAC85D0279CE7AF00E9E6BB /* FirebaseDatabase */,
+				7DAC85D2279CE7AF00E9E6BB /* FirebaseDatabaseSwift-Beta */,
+				7DAC85D4279CE7AF00E9E6BB /* FirebaseDynamicLinks */,
+				7DAC85D6279CE7AF00E9E6BB /* FirebaseRemoteConfig */,
+				7DAC85D8279CE7AF00E9E6BB /* FirebaseStorage */,
+			);
+			productName = Terrabox;
+			productReference = 7DAC8592279CE3A400E9E6BB /* Terrabox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DAC85A7279CE3A900E9E6BB /* TerraboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAC85BF279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "TerraboxTests" */;
+			buildPhases = (
+				7DAC85A4279CE3A900E9E6BB /* Sources */,
+				7DAC85A5279CE3A900E9E6BB /* Frameworks */,
+				7DAC85A6279CE3A900E9E6BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DAC85AA279CE3A900E9E6BB /* PBXTargetDependency */,
+			);
+			name = TerraboxTests;
+			productName = TerraboxTests;
+			productReference = 7DAC85A8279CE3A900E9E6BB /* TerraboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DAC85B1279CE3A900E9E6BB /* TerraboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAC85C2279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "TerraboxUITests" */;
+			buildPhases = (
+				7DAC85AE279CE3A900E9E6BB /* Sources */,
+				7DAC85AF279CE3A900E9E6BB /* Frameworks */,
+				7DAC85B0279CE3A900E9E6BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DAC85B4279CE3A900E9E6BB /* PBXTargetDependency */,
+			);
+			name = TerraboxUITests;
+			productName = TerraboxUITests;
+			productReference = 7DAC85B2279CE3A900E9E6BB /* TerraboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DAC858A279CE3A400E9E6BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7DAC8591279CE3A400E9E6BB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					7DAC85A7279CE3A900E9E6BB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7DAC8591279CE3A400E9E6BB;
+					};
+					7DAC85B1279CE3A900E9E6BB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7DAC8591279CE3A400E9E6BB;
+					};
+				};
+			};
+			buildConfigurationList = 7DAC858D279CE3A400E9E6BB /* Build configuration list for PBXProject "Terrabox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DAC8589279CE3A300E9E6BB;
+			packageReferences = (
+				7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 7DAC8593279CE3A400E9E6BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DAC8591279CE3A400E9E6BB /* Terrabox */,
+				7DAC85A7279CE3A900E9E6BB /* TerraboxTests */,
+				7DAC85B1279CE3A900E9E6BB /* TerraboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DAC8590279CE3A400E9E6BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC85A2279CE3A800E9E6BB /* LaunchScreen.storyboard in Resources */,
+				7DAC85DB279CED6D00E9E6BB /* GoogleService-Info.plist in Resources */,
+				7DAC859F279CE3A800E9E6BB /* Assets.xcassets in Resources */,
+				7DAC859D279CE3A400E9E6BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85A6279CE3A900E9E6BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85B0279CE3A900E9E6BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DAC858E279CE3A400E9E6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC859A279CE3A400E9E6BB /* ViewController.swift in Sources */,
+				7DAC8596279CE3A400E9E6BB /* AppDelegate.swift in Sources */,
+				7DAC8598279CE3A400E9E6BB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85A4279CE3A900E9E6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC85AD279CE3A900E9E6BB /* TerraboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAC85AE279CE3A900E9E6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC85B9279CE3A900E9E6BB /* TerraboxUITestsLaunchTests.swift in Sources */,
+				7DAC85B7279CE3A900E9E6BB /* TerraboxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DAC85AA279CE3A900E9E6BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DAC8591279CE3A400E9E6BB /* Terrabox */;
+			targetProxy = 7DAC85A9279CE3A900E9E6BB /* PBXContainerItemProxy */;
+		};
+		7DAC85B4279CE3A900E9E6BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DAC8591279CE3A400E9E6BB /* Terrabox */;
+			targetProxy = 7DAC85B3279CE3A900E9E6BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DAC859B279CE3A400E9E6BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DAC859C279CE3A400E9E6BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DAC85A0279CE3A800E9E6BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DAC85A1279CE3A800E9E6BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DAC85BA279CE3A900E9E6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DAC85BB279CE3A900E9E6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DAC85BD279CE3A900E9E6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Terrabox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.Terrabox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DAC85BE279CE3A900E9E6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Terrabox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.Terrabox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DAC85C0279CE3A900E9E6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.TerraboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Terrabox.app/Terrabox";
+			};
+			name = Debug;
+		};
+		7DAC85C1279CE3A900E9E6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.TerraboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Terrabox.app/Terrabox";
+			};
+			name = Release;
+		};
+		7DAC85C3279CE3A900E9E6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.TerraboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Terrabox;
+			};
+			name = Debug;
+		};
+		7DAC85C4279CE3A900E9E6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SixXY.TerraboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Terrabox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DAC858D279CE3A400E9E6BB /* Build configuration list for PBXProject "Terrabox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAC85BA279CE3A900E9E6BB /* Debug */,
+				7DAC85BB279CE3A900E9E6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAC85BC279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "Terrabox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAC85BD279CE3A900E9E6BB /* Debug */,
+				7DAC85BE279CE3A900E9E6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAC85BF279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "TerraboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAC85C0279CE3A900E9E6BB /* Debug */,
+				7DAC85C1279CE3A900E9E6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAC85C2279CE3A900E9E6BB /* Build configuration list for PBXNativeTarget "TerraboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAC85C3279CE3A900E9E6BB /* Debug */,
+				7DAC85C4279CE3A900E9E6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DAC85C8279CE7AF00E9E6BB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7DAC85CA279CE7AF00E9E6BB /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		7DAC85CC279CE7AF00E9E6BB /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		7DAC85CE279CE7AF00E9E6BB /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		7DAC85D0279CE7AF00E9E6BB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		7DAC85D2279CE7AF00E9E6BB /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		7DAC85D4279CE7AF00E9E6BB /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		7DAC85D6279CE7AF00E9E6BB /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		7DAC85D8279CE7AF00E9E6BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DAC85C7279CE7AF00E9E6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7DAC858A279CE3A400E9E6BB /* Project object */;
+}
