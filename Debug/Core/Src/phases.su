@@ -1,0 +1,5 @@
+phases.c:15:6:phase1	8	static
+phases.c:20:6:phase2	8	static
+phases.c:28:6:phase3	8	static
+phases.c:53:6:phase4	8	static
+phases.c:58:6:phase5	8	static
