@@ -20,8 +20,13 @@ class DeviceTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        Utils.styleFilledButton(button)
         // Configure the view for the selected state
+    }
+    
+    
+    @IBAction func deviceButtonTapped(_ sender: Any) {
+
     }
     
     func set(deviceID: String) {

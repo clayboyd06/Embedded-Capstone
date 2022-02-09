@@ -20,7 +20,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var addDevice: UIButton!
     
     var deviceListData = [
-        "device123", "123343435fv", "766ey"]
+        "demo1234", "123343435fv", "766ey"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,10 +96,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // Goes to the controller page for each of the buttons in
     // the table view
-    func deviceButtonTapped() {
+    @objc func deviceButtonTapped(sender: UIButton) {
         // store title as ID
         
         // go to controller page
+        let controller = storyboard?.instantiateViewController(withIdentifier: "envControl") as? HomeViewController
+        view.window?.rootViewController = controller
+        view.window?.makeKeyAndVisible()
     }
     
     

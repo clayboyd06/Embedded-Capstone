@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="617" y="185"/>
         </scene>
-        <!--Item-->
+        <!--Title-->
         <scene sceneID="24h-EX-MIK">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="znW-0e-52x" customClass="HomeViewController" customModule="Terrabox" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,16 +89,20 @@
                                 <rect key="frame" x="20" y="44" width="107" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                    <color key="baseForegroundColor" red="0.43277237419999998" green="0.62161247019999999" blue="0.39961093580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="signOutButtonTapped:" destination="znW-0e-52x" eventType="touchUpInside" id="1Ts-Yo-Q4R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJu-Ap-nSZ">
-                                <rect key="frame" x="344" y="44" width="33" height="31"/>
+                                <rect key="frame" x="261" y="44" width="139" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Controls">
+                                    <color key="baseForegroundColor" red="0.43277237419999998" green="0.62161247019999999" blue="0.39961093580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="3tV-uL-ze2" kind="show" id="dnp-ds-gLX"/>
                                 </connections>
@@ -119,7 +123,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="K8h-b1-izQ"/>
-                    <navigationItem key="navigationItem" id="3IO-fk-2KI"/>
+                    <navigationItem key="navigationItem" title="Title" id="zZV-ch-YT5"/>
                     <connections>
                         <outlet property="addDevice" destination="IJu-Ap-nSZ" id="AVw-Pk-i5l"/>
                         <outlet property="myDevices" destination="AOi-LE-E6i" id="PZl-Pn-gnn"/>
@@ -138,8 +142,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-nl-no7">
+                                <rect key="frame" x="57" y="50" width="33" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="fzC-Ae-eN8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="AAW-wP-WDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-OJ-wVl">
+                                <rect key="frame" x="286" y="50" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="OiR-PA-jFs"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qrK-Du-Lhp">
-                                <rect key="frame" x="40" y="284" width="334" height="134.5"/>
+                                <rect key="frame" x="40" y="111" width="334" height="506.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device ID: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIY-z6-PDs">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -152,48 +176,144 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmP-hb-7uz">
-                                        <rect key="frame" x="0.0" y="94.5" width="334" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fe-Fz-stC">
+                                        <rect key="frame" x="0.0" y="94.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3H-Mx-goH">
+                                        <rect key="frame" x="0.0" y="135" width="334" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGg-iu-TbG">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="^"/>
+                                                <connections>
+                                                    <action selector="tempUpTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="jCA-JZ-S32"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54J-fz-tPw">
+                                                <rect key="frame" x="167" y="0.0" width="167" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="v"/>
+                                                <connections>
+                                                    <action selector="tempDownTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="EPZ-kB-fue"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-JP-0n1">
+                                        <rect key="frame" x="0.0" y="186" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjY-th-uaI">
+                                        <rect key="frame" x="0.0" y="226.5" width="334" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-TU-fYh">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="^"/>
+                                                <connections>
+                                                    <action selector="humUpTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="0Rr-dR-mw1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV9-Aj-T69">
+                                                <rect key="frame" x="167" y="0.0" width="167" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="v"/>
+                                                <connections>
+                                                    <action selector="humDownTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="lRu-g4-zbA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LED On Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0e-74-NKR">
+                                        <rect key="frame" x="0.0" y="277.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1el-x4-mu3">
+                                        <rect key="frame" x="0.0" y="318" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sprinkler on Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLi-cC-3ye">
+                                        <rect key="frame" x="0.0" y="372" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-sl-noF">
+                                        <rect key="frame" x="0.0" y="412.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmP-hb-7uz">
+                                        <rect key="frame" x="0.0" y="466.5" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Gso-gM-P7V"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Add Device"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update Conditions"/>
                                         <connections>
                                             <action selector="addDevButtonTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="hSF-Vs-qxI"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-nl-no7">
-                                <rect key="frame" x="57" y="50" width="33" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="&lt;"/>
-                                <connections>
-                                    <action selector="backTapped:" destination="3tV-uL-ze2" eventType="touchUpInside" id="AAW-wP-WDE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QTo-8a-O4R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qrK-Du-Lhp" firstAttribute="top" secondItem="QTo-8a-O4R" secondAttribute="top" constant="284" id="06q-3N-3IH"/>
                             <constraint firstItem="qrK-Du-Lhp" firstAttribute="leading" secondItem="QTo-8a-O4R" secondAttribute="leading" constant="40" id="TVW-fQ-nf0"/>
+                            <constraint firstItem="QTo-8a-O4R" firstAttribute="bottom" secondItem="1WU-nl-no7" secondAttribute="bottom" constant="678" id="UNa-gk-yet"/>
                             <constraint firstItem="QTo-8a-O4R" firstAttribute="trailing" secondItem="qrK-Du-Lhp" secondAttribute="trailing" constant="40" id="gMU-si-E6B"/>
+                            <constraint firstItem="1WU-nl-no7" firstAttribute="leading" secondItem="QTo-8a-O4R" secondAttribute="leading" constant="57" id="j4s-uT-Xee"/>
+                            <constraint firstItem="1WU-nl-no7" firstAttribute="top" secondItem="QTo-8a-O4R" secondAttribute="top" constant="50" id="uzb-Op-pLo"/>
+                            <constraint firstItem="qrK-Du-Lhp" firstAttribute="top" secondItem="1WU-nl-no7" secondAttribute="bottom" constant="30" id="wcG-TA-Lyd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KdZ-zO-azu"/>
                     <connections>
                         <outlet property="addDevButton" destination="wmP-hb-7uz" id="Myy-zf-5VD"/>
                         <outlet property="backButton" destination="1WU-nl-no7" id="1Fi-uH-pkO"/>
+                        <outlet property="currentHumidLabel" destination="5mH-JP-0n1" id="Dha-zh-CZf"/>
+                        <outlet property="currentTempLabel" destination="9Fe-Fz-stC" id="NvF-6l-Ow4"/>
                         <outlet property="deviceID" destination="Z21-rk-sDT" id="w3T-zy-okY"/>
                         <outlet property="deviceIDLable" destination="aIY-z6-PDs" id="dBi-US-vcY"/>
+                        <outlet property="humidDown" destination="RV9-Aj-T69" id="H6H-hQ-Ipa"/>
+                        <outlet property="humidUp" destination="rTy-TU-fYh" id="uzZ-co-REM"/>
+                        <outlet property="ledLabel" destination="L0e-74-NKR" id="YuB-gR-Mkq"/>
+                        <outlet property="ledTextField" destination="1el-x4-mu3" id="bck-df-eLL"/>
+                        <outlet property="refreshButton" destination="0uc-OJ-wVl" id="eNo-DO-yxO"/>
+                        <outlet property="sprinkTextField" destination="fG2-sl-noF" id="UJ8-3y-71c"/>
+                        <outlet property="sprinklerLabel" destination="ZLi-cC-3ye" id="svg-NE-iST"/>
+                        <outlet property="tempDown" destination="54J-fz-tPw" id="Qhr-vw-qjA"/>
+                        <outlet property="tempUp" destination="MGg-iu-TbG" id="bu7-ad-rT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVE-yj-wiE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6823" y="-210"/>
+            <point key="canvasLocation" x="6800.0000000000009" y="-502.23214285714283"/>
+        </scene>
+        <!--Enviornmental Control View Controller-->
+        <scene sceneID="ldK-mw-WTx">
+            <objects>
+                <viewController storyboardIdentifier="envControl" id="Inz-6G-ZJh" customClass="EnviornmentalControlViewController" customModule="Terrabox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6O-p8-TDk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MAL-Gk-S1d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxn-fK-iI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7586" y="34"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Saw-EW-V6E">
@@ -458,7 +578,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DZI-pA-m6F"/>
+        <segue reference="HrX-ba-2Wk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

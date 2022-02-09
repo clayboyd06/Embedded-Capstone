@@ -11,6 +11,7 @@
 		7D39FC3C27B20FE0006A7298 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39FC3A27B20FE0006A7298 /* DeviceTableViewCell.swift */; };
 		7D39FC3D27B20FE0006A7298 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D39FC3B27B20FE0006A7298 /* DeviceTableViewCell.xib */; };
 		7D39FC3F27B21DA9006A7298 /* deviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39FC3E27B21DA9006A7298 /* deviceInfo.swift */; };
+		7D39FC4127B35395006A7298 /* EnviornmentalControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39FC4027B35394006A7298 /* EnviornmentalControlViewController.swift */; };
 		7D6A748A27AB5D9A007F5763 /* deviceControlFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6A748927AB5D99007F5763 /* deviceControlFunctions.swift */; };
 		7DAC8596279CE3A400E9E6BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8595279CE3A400E9E6BB /* AppDelegate.swift */; };
 		7DAC8598279CE3A400E9E6BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8597279CE3A400E9E6BB /* SceneDelegate.swift */; };
@@ -81,6 +82,7 @@
 		7D39FC3A27B20FE0006A7298 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		7D39FC3B27B20FE0006A7298 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		7D39FC3E27B21DA9006A7298 /* deviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceInfo.swift; sourceTree = "<group>"; };
+		7D39FC4027B35394006A7298 /* EnviornmentalControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviornmentalControlViewController.swift; sourceTree = "<group>"; };
 		7D6A748927AB5D99007F5763 /* deviceControlFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceControlFunctions.swift; sourceTree = "<group>"; };
 		7DAC8592279CE3A400E9E6BB /* Terrabox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terrabox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAC8595279CE3A400E9E6BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		7D39FC4227B361A2006A7298 /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Unused;
+			sourceTree = "<group>";
+		};
 		7DAC8589279CE3A300E9E6BB = {
 			isa = PBXGroup;
 			children = (
@@ -225,14 +234,16 @@
 		7DE855C127A5CB2B0000CC21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7DAC8599279CE3A400E9E6BB /* ViewController.swift */,
 				7DE855BF27A5B68E0000CC21 /* CustomSettingsViewController.swift */,
+				7D39FC4227B361A2006A7298 /* Unused */,
+				7DAC8599279CE3A400E9E6BB /* ViewController.swift */,
 				7DF593DE27A73BB800EDC56B /* HomeViewController.swift */,
 				7DE855B527A5B5860000CC21 /* LoginViewController.swift */,
 				7DE855B727A5B5E20000CC21 /* SignUpViewController.swift */,
 				7DE855BB27A5B6330000CC21 /* NewDeviceViewController.swift */,
 				7DE855BD27A5B6770000CC21 /* PresetsViewController.swift */,
 				7D39FC3A27B20FE0006A7298 /* DeviceTableViewCell.swift */,
+				7D39FC4027B35394006A7298 /* EnviornmentalControlViewController.swift */,
 				7D39FC3B27B20FE0006A7298 /* DeviceTableViewCell.xib */,
 			);
 			path = Views;
@@ -407,6 +418,7 @@
 				7DE855B627A5B5860000CC21 /* LoginViewController.swift in Sources */,
 				7DAC859A279CE3A400E9E6BB /* ViewController.swift in Sources */,
 				7D39FC3C27B20FE0006A7298 /* DeviceTableViewCell.swift in Sources */,
+				7D39FC4127B35395006A7298 /* EnviornmentalControlViewController.swift in Sources */,
 				7DAC8596279CE3A400E9E6BB /* AppDelegate.swift in Sources */,
 				7D6A748A27AB5D9A007F5763 /* deviceControlFunctions.swift in Sources */,
 				7DE855BE27A5B6770000CC21 /* PresetsViewController.swift in Sources */,
